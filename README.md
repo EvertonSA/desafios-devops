@@ -30,3 +30,12 @@ A implementação deve ficar na pasta correspondente ao desafio. Fique à vontad
 Caso queira mais detalhes de como trabalhamos, quais são nossos valores e ideais, confira a página [Carreira IDwall](https://idwall.co/carreira) e mesmo que seu perfil não esteja listado nas vagas em aberto, lhe encorajamos a mandar seu CV para jobs@idwall.co! Valorizamos bons profissionais sempre e gostamos de manter contato com gente boa.
 
 Boas implementações! 
+
+# Everton Arakaki - Terraform + Ansible 
+
+Olá colegas da Idwall!
+
+Resolver este desafio foi divertido, pois não tenho muita experiência com Terraform. Já tinha feito manutenções em codigos prontos, mas definir os modulos do 0 foi legal. Não ficou um codigo de extrema qualidade, mas segui padrões que já tinha visto em projetos anteriores. Em relação a Ansible, tenho bem mais experiência que com Terraform, mas novamente, não fui responsável pelo dia 0. Nessa minha solução eu uso as duas ferramentas, pois ambas tem intuitos muito diferentes! Ansible é uma ferramenta para Configuration Manager e Terraform é uma ferramenta para IaaC. Espero que gostem.
+
+Dentro do `README.md` da pasta terraform-ansible eu coloquei instruções de como utilizar o codigo. 
+
