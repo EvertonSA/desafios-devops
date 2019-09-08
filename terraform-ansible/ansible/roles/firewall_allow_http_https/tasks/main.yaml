@@ -1,0 +1,26 @@
+# tasks file for ansible-firewalld
+- name: Install firewalld
+  yum: 
+    name: firewalld
+    state: latest
+
+- name: start firewalld
+  service: 
+    name: firewalld 
+    state: started
+    enabled: yes
+    
+- name: add http rule
+  firewalld:
+    service: https
+    permanent: yes
+    state: enabled
+
+- name: add https rule
+  firewalld:
+    service: https
+    permanent: yes
+    state: enabled
+
+- name: firewalld reload
+  command: firewall-cmd --reload

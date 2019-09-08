@@ -1,0 +1,2 @@
+- name: simple-apache-image-for-idwall
+  command: docker run -dit --name apache -p 80:80 httpd:2.4

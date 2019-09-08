@@ -1,0 +1,10 @@
+---
+- hosts: HOST_IP
+  remote_user: apiadmin
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - docker_ce
+    - firewall_allow_http_https
+    - apache_container
