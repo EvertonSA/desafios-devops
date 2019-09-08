@@ -1,5 +1,5 @@
 ---
-- hosts: HOST_ID
+- hosts: HOST_IP
   remote_user: apiadmin
   become: yes
   become_user: root

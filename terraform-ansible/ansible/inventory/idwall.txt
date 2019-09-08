@@ -1,2 +1,2 @@
 [idwall_instance]
-HOST_ID ansible_user=apiadmin
+HOST_IP ansible_user=apiadmin
