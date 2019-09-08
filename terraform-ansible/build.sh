@@ -42,6 +42,9 @@ echo "feeding ansible config with terraform output"
 sed -i "s/HOST_IP/${HOST_IP}/g" ansible/playbook.yaml
 sed -i "s/HOST_IP/${HOST_IP}/g" ansible/inventory/idwall.txt
 
+echo "ansible magic needs some seconds.....60s"
+sleep 60s
+
 echo "ansible magic start"
 cd ansible 
 ansible-playbook playbook.yaml

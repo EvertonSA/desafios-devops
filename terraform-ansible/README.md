@@ -51,3 +51,12 @@ Com as variaveis de ambiente definidas, é hora de buildar:
 ```
 ./build.sh
 ```
+
+To destroy:
+```
+./destroy.sh
+```
+
+Tem um probleminha aqui nesse destroy, eu uso sed para alimentar o Ansible com o output do Terraform. Se buildar de novo, sem clonar o repo novamente, o sed vai falhar.....
+
+É isso!
