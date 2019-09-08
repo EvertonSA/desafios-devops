@@ -8,4 +8,4 @@ rm -f ansible/apiadmin.*
 
 echo "delete GCP service account"
 gcloud iam service-accounts delete \
-  apiadmin@${PROJECT-ID}.iam.gserviceaccount.com
+  apiadmin@${PROJECT_ID}.iam.gserviceaccount.com
