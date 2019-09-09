@@ -8,3 +8,7 @@ app.get('/', (req, res) => {
   const name = process.env.NAME || 'candidato';
   res.send(`Olá ${name}!`);
 });
+
+app.get('/health', (req, res) => {
+  res.json({status: 'UP'});
+});
