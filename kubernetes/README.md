@@ -30,3 +30,38 @@ Dentro deste repositório existe um subdiretório **app** e um **Dockerfile** qu
 * A aplicação sobe por _default_ utilizando a porta **3000** e utiliza uma variável de ambiente **$NAME**
 
 * Não é necessário realizar o _upload_ da imagem Docker para um registro público, você pode construir a imagem localmente e utilizá-la diretamente.
+
+# Everton Arakaki - solução
+
+Meus caros, eu não perdi tempo arrumando meu cluster local. Sinto muito. Meu PC em casa só serve pra jogar League of Legends, Counter Strike e Google Cloud Platform.
+Todo o meu trabalho hoje está na Cloud e eu sou usuário do Google Cloud Shell. Resolvi esse desafio usando GKE com uma instancia xulinha.
+
+Mas a chart está flexivel para trabalhar com um ingress de minikube, é só alterar o `values.yaml`.
+
+Também fiz mais uma coisa que vocês recomendaram não fazer:  _upload_ da imagem Docker para um registro público. Eu achei necessário pois implementei um endpoint burrão para o livenessProbe e readnessProbe. Em ambientes de produção meus livenessProbe/readnessProbe são muito mais eficientes rsrs, mas esse da para o gasto. 
+
+Para subir em um cluster GKE com nginx ingress já configurado no default namespace:
+```
+helm install ./appchart
+```
+
+ai é so acessar o Ip do seu ingress controller /app  e ver o `Olá Everton!`
+
+Para subir a app no seu minikube: (espero que funcione rsrs)
+```
+DOMAIN="seudominio.local"
+helm install \
+  --set displayName=Everton \
+  --set ingress.enabled=true \
+  --set hosts[0].host=${DOMAIN} \
+  --set hosts[0].paths={"/app"} \
+  ./appchart
+```
+
+Aproveito o espaço para que vocês me deem uma tempo para eu mostrar um projeto que venho trabahando a um tempo. Um bootstrapper de cluster de GKE com log, mon, e cid + Istio. Ficou bem legal e queria ter a chance de compartilhar meus conhecimentos com alguém que entenda de GCP e possa me dar umas dicas de onde posso melhorar. 
+
+Gostaria de aprimorar esse desafio ao máximo, mas a semana vai começar e não vou ter tempo devido a atividades na firma atual.
+
+Espero que gostem!
+
+

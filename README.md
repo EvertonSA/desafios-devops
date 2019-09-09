@@ -39,3 +39,10 @@ Resolver este desafio foi divertido, pois não tenho muita experiência com Terr
 
 Dentro do `README.md` da pasta terraform-ansible eu coloquei instruções de como utilizar o codigo. 
 
+# Everton Arakaki - kubernetes
+
+Olá colegas da Idwall! 
+
+Kubernetes é minha paixão. Abaixei a prioridade de todas as outras coisas da minha "to learn list" para colocar Kubernetes em primeiro lugar. Isso faz mas ou menos 1 ano e meio atrás. E mesmo correndo atrás desse objetivo, vejo que quanto mais eu estudo, mais eu percebo que não sei tudo. Foi divertido fazer esse desafio também, pois sou usuario de helm a uns 8 meses e não tinha feito uma chart propria! "SHAME"! Enfim... Não tenho mais créditos no GCP pois estou a mais de 2 anos na plataforma e já gastei uns bons dinheiros. Hoje sou engenheiro GCP certificado e entendo como a plataforma funciona com bastance proficiência. Acho que esse é um dos motivos principais por eu querer trabalhar na Idwall, vocês usam Kubernetes e vocês usam Google Cloud Platform! Espero ter essa honra meus caros! valeu!
+
+Dentro do `README.md` da pasta kubernetes eu coloquei instruções de como utilizar a chart.
